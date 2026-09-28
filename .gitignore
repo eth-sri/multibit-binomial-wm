@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+.DS_Store
+.vscode/
+.idea/
+
+# Experiment outputs
+output/
+figure_data/
+figures/

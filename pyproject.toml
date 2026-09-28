@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lm-wm-tools"
+version = "0.1.0"
+description = "Every Bit, Everywhere, All at Once: A Binomial Multibit LLM Watermark (NeurIPS 2026)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+  "torch",
+  "vllm",
+  "scipy",
+  "POT",
+  "datasets==3.6.0",
+  "cooper-optim",
+  "cvxpy",
+  "cvxpylayers",
+  "nltk",
+  "galois",
+  "loguru",
+  "transformers",
+  "fast-bleu",
+  "pandas",
+  "polars",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lm_wm_tools*"]
